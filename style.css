@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(42, 42, 42);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+.log-web{
+    width: 200px;
+}
+
+.navbar{
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.377);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav > li:hover{
+        background-color: #512c8b;
+     }
+}
+
+/* PORTADA DE INICIO */
+.cont-hero{
+    background-image: linear-gradient(#0000009f, #0000008b), url(images/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.cont-hero-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-title{
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.hero-txt{
+    color: white;
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-cont-cta{
+    display: flex;
+}
+
+.hero-cta{
+    background-color: #512c8b;
+    text-align: center;
+    display: block;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.hero-cta:hover{
+    background-color: transparent;
+    border: solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* NUESTROS SERVICIOS */
+.container-card-serv{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.serv-title{
+    width: 500px;
+    font-size: 35px;
+    text-align: center;
+    margin: 40px auto;
+    color: rgb(42, 42, 42);
+    color: #512c8b;
+}
+
+.card-servicios{
+    background-color: rgb(245, 245, 245);
+    width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 5px rgba(60, 60, 60, 0.283);
+}
+
+.card-serv-img{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.card-serv-title{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.card-serv-txt{
+    font-size: 16px;
+}
+
+.card-serv-cta{
+    background-color: #512c8b;
+    display: block;
+    color: white;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-serv-cta:hover{
+    background-color: transparent;
+    border: solid #512c8b;
+    color: #512c8b;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* PARQUE VEHICULAR */
+.container-flotilla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.flotilla-description{
+    line-height: 50px;
+}
+
+.flotilla-title{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #512c8b;
+}
+
+.cont-flotilla-img{
+    width: 50%;
+}
+
+.flotilla-bus{
+    width: 100%;
+}
+
+/* Cards caracteristicas y tipos de vehiculos */
+.cont-flotilla-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 15px;
+    justify-content: space-around;
+}
+
+.card-flotilla{
+    background-color: #f5f5f5;
+    display: block;
+    margin: 20px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-flotilla-cta{
+    background-color: #512c8b;
+    text-align: center;
+    display: block;
+    color: white;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.card-flotilla-cta:hover{
+    background-color: transparent;
+    border: solid #512c8b;
+    color: #512c8b;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* PROPUESTA DE VALOR */
+.cont-valor{
+    background-color: #512c8b;
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-top: 1px solid transparent;
+}
+
+.valor-txt{
+    margin: 40px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.valor-title{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px ;
+}
+
+.valor-description{
+    color: white;
+}
+
+.valor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card-valor{
+    width: 300px;
+    margin: 10px auto;
+    background-color: #3b2066;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-valor-title{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.card-valor-description{
+    color: white;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+
+
+
+
+
+/* PIE DE PÁGINA */
+.cont-footer{
+    background-color: #f5f5f5;
+    width: 100%;
+    border: transparent solid .2px;
+}
+
+.cont-footer-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+}
+
+.box-footerbig{
+    width: 400px;
+}
+
+.socialmedia{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.footer-logo{
+    width: 70%;
+    margin: 20px auto;
+}
+
+hr{
+    width: 95%;
+    margin: auto;
+}
+
+.copywriting{
+    margin: 10px auto;
+    width: 60%;
+    text-align: center;
+}
+
+/* HERO-NOSOTROS */
+.cont-hero-n{
+    background-image: linear-gradient(#0000009f, #0000008b), url(#);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.cont-description-n{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin: 0 50px;
+    justify-content: center;
+}
+
+.hero-txt-n, .hero-title-n{
+    color: white;
+}
+
+
+/* FILOSOFÍA EMPRESARIAL */
+.cont-filosofia{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-img-filosofia{
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.img-filosofia{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cards-filosofia{
+    width: 350px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.img-card-filosofia{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+/* POLITICA DE CALIDAD */
+.cont-politica{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.politica-description{
+    width: 50%;
+    padding: 20px;
+}
+
+.cont-politica-img{
+    width: 50%;
+    padding: 20px;
+}
+
+.img-politica{
+    width: 100%;
+}
+
+/* OPERADORES DE TRANSPORTE */
+.cont-operadores{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.operadores-description{
+    width: 50%;
+    padding: 20px;
+}
+
+.cont-operadores-img{
+    width: 50%;
+    padding: 20px;
+}
+
+.img-operadores{
+    width: 100%;
+}
+
+/* LOGISTICA Y CENTRO DE ATENCION */
+.title-principal-serv{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cont-logistica{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logistica-description{
+    width: 50%;
+    padding: 20px;
+}
+
+.cont-logistica-img{
+    width: 50%;
+    padding: 20px;
+}
+
+.img-logistica{
+    width: 100%;
+}
+
+/* MANTENIMIENTO Y ASISTENCIA VIAL */
+.cont-mantenimiento{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mantenimiento-description{
+    width: 50%;
+    padding: 20px;
+}
+
+.cont-mantenimiento-img{
+    width: 50%;
+    padding: 20px;
+}
+
+.img-mantenimiento{
+    width: 100%;
+}
+
+/* SERVICIOS DE TRANSPORTE */
+.cont-servicio-s{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px 10px rgba(54, 54, 54, 0.225);
+}
+
+.cont-img-serv{
+    width: 80%;
+    margin-top: 40px;
+}
+
+.cont-description-s{
+    padding: 20px;
+}
+
+.img-serv{
+    width: 100%;
+}
+
+.title-serv{
+    margin: 10px;
+}
+
+.serv-cta{
+    background-color: #512c8b;
+    margin: 25px auto;
+    text-align: center;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.serv-cta:hover{
+    background-color: transparent;
+    border: solid #512c8b;
+    color: #512c8b;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+/* PÁGINA VEHICULOS */
+.title-principal-vehiculos{
+    text-align: center;
+    margin: 30px;
+}
+
+.cont-principal-vehiculos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.cont-vehiculos{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.cont-img-vehiculos{
+    width: 600px;
+}
+
+.cont-img-vehiculos img{
+    width: 100%;
+}
+
+.cont-description-vehiculos{
+    width: 500px;
+    background-color: #3b2066;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.title-vehiculos, .txt-vehiculos{
+    color: white;
+}
+
+
+
+
+
+
