@@ -20,6 +20,14 @@ h2{
     font-size: 35px;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+
+}
 
 /* MENÚ DE NAVEGACIÓN */
 .log-web{
@@ -78,6 +86,7 @@ h2{
 .hero-cta{
     background-color: #512c8b;
     text-align: center;
+    text-decoration: none
     display: block;
     color: white;
     width: 200px;
@@ -94,13 +103,6 @@ h2{
     font-weight: bold;
     border-radius: 10px;
 }
-
-
-
-
-
-
-
 
 
 /* NUESTROS SERVICIOS */
@@ -180,7 +182,7 @@ h2{
 }
 
 .flotilla-description{
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .flotilla-title{
@@ -189,6 +191,10 @@ h2{
     margin-bottom: 20px;
     color: #512c8b;
 }
+
+.flotilla-list {
+    list-style-image: url(images/check.svg);
+  }
 
 .cont-flotilla-img{
     width: 50%;
@@ -320,6 +326,11 @@ h2{
     width: 400px;
 }
 
+.txt-footer{
+    text-decoration: none;
+    color: black;
+}
+
 .socialmedia{
     width: 60%;
     display: flex;
@@ -391,7 +402,7 @@ hr{
 
 .cards-filosofia{
     width: 350px;
-    margin: 0 5px;
+    margin: 10px 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
