@@ -5,19 +5,11 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: rgb(42, 42, 42);
+    color: #2a2a2a;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-}
-
-h1{
-    font-size: 50px;
-}
-
-h2{
-    font-size: 35px;
 }
 
 a:link, a:visited, a:active {
@@ -26,10 +18,9 @@ a:link, a:visited, a:active {
 
 ul{
     list-style: none;
-
 }
 
-/* 1. MENÚ DE NAVEGACIÓN */
+/* (1) MENÚ DE NAVEGACIÓN */
 .log-web {
     width: 200px;
 }
@@ -45,93 +36,112 @@ ul{
      }
 }
 
-/* 2. PORTADA DE INICIO */
+
+/* (2) PORTADA DE INICIO */
 .cont-hero {
     background-image: linear-gradient(#0000009f, #0000008b), url(images/img-2.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 90vh;
-}
-
-.cont-hero-description{
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    height: 100%;
     justify-content: center;
-    align-items: start;
-    border: solid white 1px;
-    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.hero-cont-cta{
-    display: flex;
-    flex-wrap: wrap;
-    border: solid white 1px;
+.box-description {
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width:992px) {
+    .cont-hero-description{
+        width: 65%;
+        text-align: start;
+    }
+
+    /* .hero-cta{
+        margin-bottom: 10px;
+    } */
 }
 
 .hero-title{
     color: white;
-    /* width: 70%; */
-    margin: auto;
-    font-size: 50px;
-    line-height: 60px;
-    margin: 20px 0;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .hero-txt{
     color: white;
-    width: 70%;
     font-size: 20px;
-    margin-bottom: 20px;
 }
 
 .hero-cta{
+    display: inline-block;
     background-color: #512c8b;
-    text-align: center;
-    text-decoration: none
-    width: 200px;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 8px;
+    border: 3px solid #512c8b;
+    color: white;
     font-weight: bold;
-    margin: 0 10px;
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* .hero-cta:hover{
+.blanco{
+    display: inline-block;
     background-color: transparent;
-    border: solid #ffffff;
-    color: #ffffff;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    color: white;
     font-weight: bold;
-    border-radius: 10px;
-} */
+    padding: 10px;
+    width: 330px;
+    text-align: center;
+}
+
+.hero-cta:hover{
+    background-color: #3b2066;
+    border: 3px solid #3b2066;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.blanco:hover{
+    background-color: #ffffff19;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
 
 
 /* NUESTROS SERVICIOS */
 .container-card-serv{
     width: 90%;
     display: flex;
-    margin: auto;
+    margin: 40px auto;
     flex-wrap: wrap;
 }
 
 .serv-title{
-    width: 500px;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
     margin: 40px auto;
-    color: rgb(42, 42, 42);
     color: #512c8b;
 }
 
 .card-servicios{
     background-color: rgb(245, 245, 245);
     width: 400px;
-    margin: auto;
-    margin-bottom: 30px;
+    margin: 20px auto;
     text-align: center;
     padding: 30px 25px;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px 5px rgba(60, 60, 60, 0.283);
+    border: solid #512c8b .3px;
 }
 
 .card-serv-img{
@@ -139,66 +149,64 @@ ul{
     margin: 0 auto;
     display: block;
     object-fit: cover;
-    border-radius: inherit;
 }
 
 .card-serv-title{
+    font-size: 25px;
+    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.card-serv-txt{
-    font-size: 16px;
-}
-
 .card-serv-cta{
     background-color: #512c8b;
+    border: solid 3px #512c8b;
     display: block;
     color: white;
     width: 60%;
     margin: 20px auto;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 8px;
+    padding: 10px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .card-serv-cta:hover{
-    background-color: transparent;
-    border: solid #512c8b;
-    color: #512c8b;
+    background-color: #3b2066;
+    border: solid #3b2066;
+    color: white;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
+
 /* PARQUE VEHICULAR */
-.container-flotilla{
+.cont-flotilla{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 20px;
+    align-items: end;
+    margin: 20px auto;
     width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
 }
 
 .flotilla-description{
+    font-size: 20px;
     line-height: 40px;
 }
 
 .flotilla-title{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
     color: #512c8b;
 }
 
 .flotilla-list {
     list-style-image: url(images/check.svg);
-  }
+}
 
 .cont-flotilla-img{
-    width: 50%;
+    width: 600px;
 }
 
 .flotilla-bus{
@@ -215,32 +223,50 @@ ul{
 
 .card-flotilla{
     background-color: #f5f5f5;
-    display: block;
+    border: solid .5px #3b2066;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 20px;
     width: 350px;
     border-radius: 10px;
     padding: 20px;
 }
 
+.box-title-icono{
+    display: flex;
+    object-fit: cover;
+    align-items: start;
+}
+
+.icon-title{
+    width: 35px;
+}
+
+.title-3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 .card-flotilla-cta{
     background-color: #512c8b;
-    text-align: center;
+    border: solid 3px #512c8b;
     display: block;
     color: white;
     width: 100%;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 5px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 8px;
     font-weight: bold;
+    text-align: center;
 }
 
 .card-flotilla-cta:hover{
-    background-color: transparent;
-    border: solid #512c8b;
-    color: #512c8b;
-    font-weight: bold;
-    border-radius: 10px;
+    background-color: #3b2066;
+    border: solid 3px #3b2066;
 }
+
 
 /* PROPUESTA DE VALOR */
 .cont-valor{
@@ -260,7 +286,8 @@ ul{
 
 .valor-title{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
     margin-bottom: 20px ;
 }
 
@@ -282,11 +309,17 @@ ul{
     background-color: #3b2066;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-valor-title{
     color: white;
-    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .card-valor-description{
@@ -299,11 +332,9 @@ ul{
 
 
 
-
-
 /* PIE DE PÁGINA */
 .cont-footer{
-    background-color: #f5f5f5;
+    background-color: #E2E3E4;
     width: 100%;
     border: transparent solid .2px;
 }
@@ -327,9 +358,14 @@ ul{
     width: 400px;
 }
 
+.title-footer{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .txt-footer{
     text-decoration: none;
-    color: black;
+    color: rgb(82, 82, 82);
 }
 
 .socialmedia{
