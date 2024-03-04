@@ -82,44 +82,44 @@
       <!-- form -->
       <div class="contact form">
         <p>Analizamos de forma personalizada tus necesidades y te ofreceremos la mejor solución. ¡Siempre pensando en los resultados y en la optimización de tus rutas! En breve te daremos una respuesta.</p>
-        <form>
+        <form action="https://formsubmit.co/marketing@transpersonaldelbajio.com" method="POST">
           <div class="formbox">
             <div class="row50">
               <div class="inputbox">
-                <span>Nombre</span>
-                <input type="text">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
               </div>
               <div class="inputbox">
-                <span>Apellidos</span>
-                <input type="text">
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido">
               </div>              
             </div>
             <div class="row50">
               <div class="inputbox">
-                <span>Empresa</span>
-                <input type="text">
+                <label for="empresa">Empresa</label>
+                <input type="text" name="empresa">
               </div>
               <div class="inputbox">
-                <span>Dirección</span>
-                <input type="text">
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion">
               </div>              
             </div>
 
             <div class="row50">
               <div class="inputbox">
-                <span>Email</span>
-                <input type="email">
+                <label for="email">Email</label>
+                <input type="email" name="email">
               </div>
               <div class="inputbox">
-                <span>Teléfono</span>
-                <input type="tel">
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone">
               </div>              
             </div>
 
             <div class="row100">
               <div class="inputbox">
-                <span>Mensaje</span>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
               </div>
             </div>
 
@@ -132,6 +132,9 @@
                 <input type="submit" value="Enviar">              
               </div>
             </div>
+
+            <input type="hidden" name="_next" value="https://www.transpersonaldelbajio.com">
+            <input type="hidden" name="_captcha" value="false">
 
           </div>
         </form>
