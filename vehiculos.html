@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transpersonal del Bajio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav class="navbar navbar-expand-md bg-secondary-subtle sticky-top">
+    <section class="container-xl">
+      <a class="navbar-brand" href="index.html">
+        <img class="log-web" src="images/logo-web.png" alt="logo-transpersonal">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-secondary-subtle" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <article class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3  text-center">
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link active" href="vehiculos.html">Vehiculos</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </nav>
+
+  <!-- CARRUSEL FLOTILLA VEHICULAR -->
+  <h2 class="title-parque">Parque vehicular</h2>
+  <div id="carouselExampleIndicators" class="carousel slide carrusel-flotilla">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/unidad1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/unidad2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/unidad3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- AMENIDADES Y CARACTERISTICAS DE LOS VEHICULOS -->
+  <article class="cont-flotilla-card">
+    <div class="card-flotilla">
+      <div class="box-title-icono">
+        <img class="icon-title" src="images/iconos parque-01.png" alt="">
+        <h3 class="title-3">Camionetas Van</h3>
+      </div>
+      <p>Modelo Nissan Urvan y Toyota Hiace 2018-2024, capacidad máxima: 14 pasajeros, cinturones de seguridad, sistema gps, asientos cómodos y reclinables, ventanas flitra sol, límite de velocidad, frenos ABC, cortinas, aire acondicionado, y botiquín de seguridad.  </p>
+    </div>
+
+    <div class="card-flotilla">
+      <div class="box-title-icono">
+        <img class="icon-title" src="images/iconos parque-02.png" alt="">
+        <h3 class="title-3">Autobús</h3>
+      </div>
+      <p>Modelo Dina, International, Volkswagen, y Mercedes-Benz 2018-2024, capacidad: 37-41 pasajeros, cinturones de seguridad, salidas de emergencia, asientos cómodos y reclinables, ventanas filtra sol, límite de velocidad, sistema gps, cortinas y  botiquín de seguridad </p>
+    </div>
+
+    <div class="card-flotilla">
+      <div class="box-title-icono">
+        <img class="icon-title" src="images/iconos parque-03.png" alt="">
+        <h3 class="title-3">Autos sedán</h3>
+      </div>
+      <p>Modelo Nissan Sentra y Nissan Versa 2018-2023, con capacidad de 5 pasajeros, deportivo y confortable, tecnología avanzada, asientos de tela, aire acondicionado, cristales electricos, luces de interiores, sistema gps, cinturones de seguridad y botiquín de seguridad.</p>
+    </div>
+  </article>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="cont-footer">
+
+    <section class="cont-footer-box">
+
+      <article class="box-footerbig">
+        <figure>
+          <a href="#"><img class="footer-logo" src="images/logo-web.png" alt="logo-Transpersonal"></a>
+        </figure>
+        <small class="txt-footer">Somos un proveedor de transporte empresarial con la misión de asegurar que día a día el personal de las empresas tenga un trayecto placentero, seguro y puntual.
+        </small>
+        <div class="socialmedia">
+          <a class="facebook" href="https://www.facebook.com/transpersonaldelbajio" target="_blank"><img src="images/fb.svg" alt="icono-facebook"></a>
+          <a class="instagram" href="https://www.instagram.com/transpersonaldelbajio/" target="_blank"><img src="images/insta.svg" alt="icono-instagram"></a>
+          <a class="linkedin" href="https://linkedin.com/company/transpersonaldelbajio" target="_blank"><img src="images/linkedin.svg" alt="icono-linkedin"></a>
+          <a class="whatsapp" href="https://wa.link/lvzx3v" target="_blank"><img src="images/whats.svg" alt="icono-whatsapp"></a>
+        </div>
+      </article>
+
+      <article class="box-footer">
+        <h3 class="title-footer">Empresa</h3>
+        <a class="txt-footer" href="nosotros.html">Nosotros</a>
+        <a class="txt-footer" href="servicios.html">Servicios</a>
+        <a class="txt-footer" href="vehiculos.html">Flotilla</a>
+        <a class="txt-footer" href="contacto.html">Cotiza</a>
+      </article>
+
+      <article class="box-footer">
+        <h3 class="title-footer">Contacto</h3>
+        <a class="txt-footer" href="tel:4621884202">Atención al cliente</a>
+        <a class="txt-footer" href="tel:4621884903">Asistencia</a>
+        <a class="txt-footer" href="tel:4621884682">Empleo</a>
+      </article>
+
+      <article class="box-footer">
+        <h3 class="title-footer">Legal</h3>
+        <a class="txt-footer" href="#">Términos y condiciones</a>
+        <a class="txt-footer" href="#">Política de privacidad</a>
+        <a class="txt-footer" href="#">Política de calidad</a>
+      </article>
+    </section>
+    <hr>
+
+    <article class="copywriting">
+      <small class="txt-footer">Copyright © 2024 Transpersonal del Bajío</small>
+    </article>
+
+  </footer>
+
+	<!-- Script de bootsrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
