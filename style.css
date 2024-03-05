@@ -53,17 +53,6 @@ ul{
     text-align: center;
 }
 
-@media (min-width:992px) {
-    .cont-hero-description{
-        width: 65%;
-        text-align: start;
-    }
-
-    /* .hero-cta{
-        margin-bottom: 10px;
-    } */
-}
-
 .hero-title{
     color: white;
     font-size: 60px;
@@ -682,6 +671,7 @@ hr{
     justify-content: center;
     align-items: center;
     background-color: #512c8b;
+    overflow: hidden;
 }
 
 .icon-info {
@@ -716,11 +706,18 @@ hr{
     height: 300px;
 }
 
-/* Diseño responsive */
+
+
+
+/* DISEÑO RESPONSIVE */
+
 @media (max-width:991px){
-    /* contacto */
-    .contact-form{
+
+    /* CONTACTO */
+    .contact-form, 
+    .contact-title{
         padding: 20px;
+        width: 90%;
     }
 
     .formbox .row50{
@@ -736,7 +733,12 @@ hr{
         width: 100%;
     }
 
-    /* footer */
+    .contact-info{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
     .box-footer{
         display: flex;
         flex-direction: column;
@@ -752,12 +754,45 @@ hr{
         flex-direction: column;
         margin: 0 auto;
         padding: 20px;
-
     }
 }
 
 @media (max-width: 768px) {
-    .navbar-nav > li:hover{
+    .navbar-nav > li:hover {
         background-color: #512c8b;
      }
+}
+
+@media (max-width: 576px) {
+    /* HERO INICIO */
+    .hero-title{
+        font-size: 30px;
+    }
+
+    .hero-txt{
+        font-size: 16px;
+    }
+    .hero-cta{
+        width: 70%;
+    }
+
+    /* HERO NOSOTROS */
+    .hero-title-nosotros{
+        font-size: 30px;
+    }
+
+    .hero-txt-nosostros{
+        font-size: 16px;
+    }
+
+    .box-description-nosotros{
+        width: 90%;
+    }
+}
+
+@media (min-width:992px) {
+    .cont-hero-description{
+        width: 65%;
+        text-align: start;
+    }
 }
