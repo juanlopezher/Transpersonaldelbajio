@@ -332,7 +332,6 @@ ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 30px;
-    /* border: solid red 3px; */
 }
 
 .box-footer{
@@ -341,12 +340,10 @@ ul{
     align-items: center;
     width: 15%;
     text-align: center;
-    /* border: solid blue 1px; */
 }
 
 .box-footerbig{
     width: 400px;
-    /* border: solid blue 1px; */
 }
 
 .title-footer{
@@ -553,78 +550,68 @@ hr{
     text-align: center;
 }
 
+
+
+
+
+
+
+
 /* SECCION DE CONTACTO */
-.contact{
-    position: relative;
-    width: 100%;
-    padding: 40px 100px;
+
+.contact {
+    width: 90%;
+    margin: 40px auto;
 }
 
-.contact-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+.contact-title {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
-.contact-title h2{
+.contact-title h2 {
     color: #512c8b;
     font-weight: bold;
     font-size: 40px;
 }
 
-.form{
-    grid-area: form;
-}
-
-.info{
-    grid-area: info;
-}
-
-.map{
-    grid-area: map;
-}
-
-.contact{
-    padding: 40px;
-}
-
-.box{
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
-    grid-template-areas:
-    "form info"
-    "form map";
-    grid-gap: 20px;
-    margin-top: 20px;
-}
-
-.contact p{
+.contact p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-/* FORMULARIO DE CONTACTO */
-.formbox{
-    position: relative;
+.box {
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* FORMULARIO */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.formbox {
     width: 100%;
 }
 
-.formbox .row50{
+.formbox .row50 {
     display: flex;
     gap: 20px;
 }
 
-.inputbox{
+.inputbox {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 50%;
+    width: 60%;
 }
 
-.formbox .row100 .inputbox{
+.formbox .row100 .inputbox {
     width: 100%;
 }
 
@@ -658,7 +645,7 @@ hr{
     gap: 10px;
 }
 
-.inputbox input[type="submit"]{
+.inputbox input[type="submit"] {
     background-color: #512c8b;
     border: solid 1px #512c8b;
     border-radius: 8px;
@@ -670,66 +657,70 @@ hr{
     padding: 14px 15px;
 }
 
-.inputbox input[type="submit"]:hover{
+.inputbox input[type="submit"]:hover {
     background-color: #3b2066;
 }
 
-/* info-box */
-.info{
-    background-color: #512c8b;
+/* CONTENEDOR INFORMACIÓN */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/* BOX-INFO */
+.box-info {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    background-color: #512c8b;
 }
 
-.icon-info{
+.icon-info {
     display: flex;
     gap: 10px;
 }
 
-.sci{
+.sci {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
 
-.info h3{
+.box-info h3 {
     color: white;
     font-weight: bold;
 }
 
-.info .infobox div p{
+.box-info .infobox div p {
     color: white;
     font-size: 16px;
 }
 
-/* info mapa */
-.map iframe{
+/* BOX-MAPA */
+.box-map {
     width: 100%;
-    height: 100%;
+}
+
+.box-map iframe{
+    width: 100%;
+    height: 300px;
 }
 
 /* Diseño responsive */
-
 @media (max-width:991px){
     /* contacto */
-    .contactUs{
+    .contact-form{
         padding: 20px;
-    }
-
-    .box{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "form"
-        "info"
-        "map";
-    }
-
-    .map{
-        min-height: 300px;
     }
 
     .formbox .row50{
@@ -744,6 +735,7 @@ hr{
         margin-bottom: 10px;
         width: 100%;
     }
+
     /* footer */
     .box-footer{
         display: flex;
@@ -751,13 +743,11 @@ hr{
         align-items: center;
         width: 20%;
         text-align: center;
-        /* border: solid blue 1px; */
     }
 
     .box-footerbig{
         width: 90%;
         text-align: center;
-        /* border: solid blue 1px; */
         display: flex;
         flex-direction: column;
         margin: 0 auto;
